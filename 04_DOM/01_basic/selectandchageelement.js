@@ -1,2 +1,0 @@
-let h1 = document.querySelector("h1")
-h1.innerText = ("hey sumit kase ho")
