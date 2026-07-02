@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            background-color: white;
+        }
+        main {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to right bottom,white);
+            padding: 20px;
+        }
+        section {
+            height: 100%;
+            width: 210px;
+            border-radius: 5px;
+            margin: auto;
+            background-color: rgb(15, 14, 14);
+        }
+        .all-reels {
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+        .all-reels::-webkit-scrollbar{
+            display: none;
+        }
+        .reel {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background-color:lightblue;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+        .reel video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .reel .bottom {
+            padding: 20px 10px;
+            background: linear-gradient(rgba(247, 244, 244, 0.971),white);
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .bottom .user {
+            display: flex;
+            align-items: centre;
+            margin-bottom: 15px;
+        }
+        .bottom .user img {
+            height: 20px;
+            width:20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .bottom .user h4 {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .bottom .user button{
+            background-color: transparent;
+            padding: 2px 4px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 2px;
+            border: 1px solid white;
+        }
+        .bottom>h3 {
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .right {
+            padding: 115px 10px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            gap: 8px;
+            text-align: center;
+            width: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right , transparent,white);
+        }
+        .right h4 {
+            cursor: pointer;
+        }
+        .right i {
+            font-size: 13px;
+            font-weight: 200;
+        }
+        .right h6 {
+            font-size: 13px;
+            font-weight: 200;
+        }
+        .right>div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="all-reels">
+        </section>
+    </main>
+    <script src="reelproject.js"></script>
+</body>
+</html>
