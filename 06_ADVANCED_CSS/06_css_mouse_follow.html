@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,body {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            anchor-name: --some-anchor; 
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+        }
+
+        .box:hover {
+             anchor-name: --some-anchor;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .anchor {
+            background-color: #b9b9b9;
+            border-radius: 10px;
+            position: absolute;
+            top: anchor(top);
+            left: anchor(left);
+            bottom: anchor(bottom);
+            right: anchor(right);
+            pointer-events: none;
+            position-anchor: --some-anchor;
+            transition: all 0.3s linear;
+            mix-blend-mode: difference;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="red box"></div>
+    <div class="blue box"></div>
+    <div class="green box"></div>
+    <div class="anchor"></div>
+</body>
+</html>
