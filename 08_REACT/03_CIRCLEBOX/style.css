@@ -1,0 +1,17 @@
+* {
+    height: 0;
+    width: 0;
+    box-sizing: border-box;
+}
+
+html ,body {
+    height: 100%;
+    width: 100%;
+}
+
+#gola  {
+    height: 200px;
+    width: 200px;
+    color: black;
+    background-color: crimson;
+}
